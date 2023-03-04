@@ -8,8 +8,7 @@
   <link rel="icon" href="assets/favicon-logo.ico">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-  <script src="index.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="header">
@@ -19,31 +18,38 @@
         <span class="logo-title">Plants</span>
       </div>
       <nav class="nav">
-        <ul class="nav-list">
-            <li class="nav-item"><a href="#home" class="nav-link current-link">Home</a></li>
-            <li class="nav-item"><a href="#about" class="nav-link">About us</a></li>
-            <li class="nav-item"><a href="#service" class="nav-link">Service</a></li>
-            <li class="nav-item"><a href="#prices" class="nav-link">Price</a></li>
-            <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+        <div class="hamb hamb__field" id="hamb">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-list" id="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link current-link">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About us</a></li>
+          <li class="nav-item"><a href="#service" class="nav-link">Service</a></li>
+          <li class="nav-item"><a href="#prices" class="nav-link">Price</a></li>
+          <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
         </ul>
-    </nav>
+      </nav>
+      <div class="popup" id="popup"></div>
     </div>
   </header>
   <main class="main">
     <section class="home-section section" id="home">
-        <div class="container">
-          <img src="assets/images/leafs.png" alt="" class="leaves-img">
-          <div class="home-text-box">
-            <h1>We grow <span class="green-text">plants</span> and give you oxygen</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-            <button class="main-btn">LEARN MORE</button>
-          </div>
+      <div class="container">
+        <img src="assets/images/leafs.png" alt="" class="leaves-img">
+        <div class="home-text-box">
+          <h1>We grow <span class="green-text">plants</span> and give you oxygen</h1>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+          <button class="main-btn">LEARN MORE</button>
         </div>
+      </div>
     </section>
     <section class="about-section section" id="about">
       <div class="container">
         <div class="about-text-box">
-          <h2 class="about-title"><span class="green-text">We are</span> professional experienced <span class="green-text">gardeners</span></h2>
+          <h2 class="about-title"><span class="green-text">We are</span> professional<br>experienced <span class="green-text">gardeners</span></h2>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
         </div>
         <img src="assets/images/houseplant.png" alt="Home plant" class="home-plant">
@@ -54,49 +60,49 @@
         <div class="service-title-box">
           <h2 class="service-title green-text">Service and our projects</h2>
           <div class="service-btn-box">
-            <button class="servise-btn">Gardens&nbsp;</button>
-            <button class="servise-btn">Lawn</button>
-            <button class="servise-btn">Planting&nbsp;</button>
+            <button class="servise-btn btn">Gardens</button>
+            <button class="servise-btn btn">Lawn</button>
+            <button class="servise-btn btn">Planting</button>
           </div>
         </div>
         <div class="service-box-wrapper">
           <div class="service-box">
-            <img src="assets/images/service-box/first.png" alt="" class="service-box-img">
+            <div class="service-box-img serv-img-1"></div>
             <div class="serv-box-info">
               <h3 class="service-box-title">Garden care</h3>
               <span class="service-box-text">Lorem Ipsum has been the industry</span>
             </div>
           </div>
           <div class="service-box">
-            <img src="assets/images/service-box/second.png" alt="" class="service-box-img">
+            <div class="service-box-img serv-img-2"></div>
             <div class="serv-box-info">
               <h3 class="service-box-title">Planting</h3>
               <span class="service-box-text">Lorem Ipsum has been the industry</span>
             </div>
           </div>
           <div class="service-box">
-            <img src="assets/images/service-box/third.png" alt="" class="service-box-img">
+            <div class="service-box-img serv-img-3"></div>
             <div class="serv-box-info">
               <h3 class="service-box-title">Lawn care&nbsp;</h3>
               <span class="service-box-text">Lorem Ipsum has been the industry</span>
             </div>
           </div>
           <div class="service-box">
-            <img src="assets/images/service-box/fourth.png" alt="" class="service-box-img">
+            <div class="service-box-img serv-img-4"></div>
             <div class="serv-box-info">
               <h3 class="service-box-title">Planting</h3>
               <span class="service-box-text">Lorem Ipsum has been the industry</span>
             </div>
           </div>
           <div class="service-box">
-            <img src="assets/images/service-box/fifth.png" alt="" class="service-box-img">
+            <div class="service-box-img serv-img-5"></div>
             <div class="serv-box-info">
               <h3 class="service-box-title">Garden care</h3>
               <span class="service-box-text">Lorem Ipsum has been the industry</span>
             </div>
           </div>
           <div class="service-box">
-            <img src="assets/images/service-box/sixth.png" alt="" class="service-box-img">
+            <div class="service-box-img serv-img-6"></div>
             <div class="serv-box-info">
               <h3 class="service-box-title">Planting</h3>
               <span class="service-box-text">Lorem Ipsum has been the industry</span>
@@ -109,32 +115,98 @@
       <div class="container">
         <div class="prices-box">
           <h2 class="prices-title">Prices</h2>
-          <div class="prices-wrapper">
-            <div class="prices-option">Basics
-              <img src="assets/icons/accordion_btn.svg" alt="">
+          <div class="prices-wrapper" id="prices-wrapper">
+            <div class="prices-option">
+              <div class="label">
+                Basics
+                <div class="price-toggle"></div>
+              </div>
+              <div class="content">
+                <hr>
+                <p class="price-desc">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                <div class="price-info">
+                  <span class="dollar-sign">$</span>
+                  <span class="price-amount">15</span>
+                  <span class="price-period">/ per hour</span>
+                </div>
+                <a href="#contacts">
+                  <button class="order-btn">Order</button>
+                </a>
+              </div>
             </div>
-            <div class="prices-option">Standard
-              <img src="assets/icons/accordion_btn.svg" alt="">
+            <div class="prices-option">
+              <div class="label">
+                Standard
+                <div class="price-toggle"></div>
+              </div>
+              <div class="content">
+                <hr>
+                <p class="price-desc">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                <div class="price-info">
+                  <span class="dollar-sign">$</span>
+                  <span class="price-amount">25</span>
+                  <span class="price-period">/ per hour</span>
+                </div>
+                <a href="#contacts">
+                  <button class="order-btn">Order</button>
+                </a>
+              </div>
             </div>
-            <div class="prices-option">Pro care
-              <img src="assets/icons/accordion_btn.svg" alt="">
+            <div class="prices-option">
+              <div class="label">
+                Pro care
+                <div class="price-toggle"></div>
+              </div>
+              <div class="content">
+                <hr>
+                <p class="price-desc">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                <div class="price-info">
+                  <span class="dollar-sign">$</span>
+                  <span class="price-amount">35</span>
+                  <span class="price-period">/ per hour</span>
+                </div>
+                <a href="#contacts">
+                  <button class="order-btn" href="#contacts">Order</button>
+                </a>
+              </div>
             </div>
           </div>
         </div>
         <div class="prices-contact-box">
-          <span class="prices-title">Our best <span class="green-text">gardeners</span> are ready to help you</span>
-          <button class="contact-btn">Contact us&nbsp;</button>
+          <span class="prices-subtitle">Our best <span class="green-text">gardeners</span> are ready to help you</span>
+          <button class="contact-btn">Contact us</button>
           <img src="assets/images/leafs-small.png" alt="">
         </div>
       </div>
     </section>
     <section class="contacts-section section" id="contacts">
       <div class="container">
-        <img src="assets/images/contact_woman.png" alt="">
+        <img src="assets/images/contact_woman.png" alt="" class="contact-img">
         <div class="contact-wrapper">
           <h2 class="contact-title">Contact us</h2>
-          <div class="contact-city">City
-            <img src="assets/icons/accordion_btn_grey.svg" alt="">
+          <div class="custom-select">
+            <select class="contact-city" id="contact-city">
+              <option value="" selected disabled hidden>City</option>
+              <option value="1">Canandaigua, NY</option>
+              <option value="2">New York City</option>
+              <option value="3">Yonkers, NY</option>
+              <option value="4">Sherrill, NY</option>
+            </select>
+          </div>
+          <div class="city-card" id="city-card">
+            <div class="card-info">
+              <div class="card-label">City:</div>
+              <div class="card-data" id="city-name">Canandaigua, NY</div>
+            </div>
+            <div class="card-info">
+              <div class="card-label">Phone:</div>
+              <div class="card-data" id="city-phone">+1	585	393 0001</div>
+            </div>
+            <div class="card-info">
+              <div class="card-label">Office adress:</div>
+              <div class="card-data" id="city-adress">151 Charlotte Street</div>
+            </div>
+            <a href="" class="btn-to-call" id="btn-to-call">Call us</a>
           </div>
         </div>
       </div>
@@ -174,8 +246,9 @@
               </a>
             </li>
           </ul>
-      </div>
+        </div>
     </div>
   </footer>
+  <script src="index.js"></script>
 </body>
 </html>
